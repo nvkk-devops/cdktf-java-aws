@@ -1,0 +1,352 @@
+package imports.aws;
+
+@javax.annotation.Generated(value = "jsii-pacmak/1.24.0 (build b722f66)", date = "2021-03-10T09:47:02.269Z")
+@software.amazon.jsii.Jsii(module = imports.aws.$Module.class, fqn = "aws.DataAwsDbSnapshotConfig")
+@software.amazon.jsii.Jsii.Proxy(DataAwsDbSnapshotConfig.Jsii$Proxy.class)
+public interface DataAwsDbSnapshotConfig extends software.amazon.jsii.JsiiSerializable, com.hashicorp.cdktf.TerraformMetaArguments {
+
+    default @org.jetbrains.annotations.Nullable java.lang.String getDbInstanceIdentifier() {
+        return null;
+    }
+
+    default @org.jetbrains.annotations.Nullable java.lang.String getDbSnapshotIdentifier() {
+        return null;
+    }
+
+    default @org.jetbrains.annotations.Nullable java.lang.Boolean getIncludePublic() {
+        return null;
+    }
+
+    default @org.jetbrains.annotations.Nullable java.lang.Boolean getIncludeShared() {
+        return null;
+    }
+
+    default @org.jetbrains.annotations.Nullable java.lang.Boolean getMostRecent() {
+        return null;
+    }
+
+    default @org.jetbrains.annotations.Nullable java.lang.String getSnapshotType() {
+        return null;
+    }
+
+    /**
+     * @return a {@link Builder} of {@link DataAwsDbSnapshotConfig}
+     */
+    static Builder builder() {
+        return new Builder();
+    }
+    /**
+     * A builder for {@link DataAwsDbSnapshotConfig}
+     */
+    public static final class Builder implements software.amazon.jsii.Builder<DataAwsDbSnapshotConfig> {
+        private java.lang.String dbInstanceIdentifier;
+        private java.lang.String dbSnapshotIdentifier;
+        private java.lang.Boolean includePublic;
+        private java.lang.Boolean includeShared;
+        private java.lang.Boolean mostRecent;
+        private java.lang.String snapshotType;
+        private java.lang.Number count;
+        private java.util.List<com.hashicorp.cdktf.ITerraformDependable> dependsOn;
+        private com.hashicorp.cdktf.TerraformResourceLifecycle lifecycle;
+        private com.hashicorp.cdktf.TerraformProvider provider;
+
+        /**
+         * Sets the value of {@link DataAwsDbSnapshotConfig#getDbInstanceIdentifier}
+         * @param dbInstanceIdentifier the value to be set.
+         * @return {@code this}
+         */
+        public Builder dbInstanceIdentifier(java.lang.String dbInstanceIdentifier) {
+            this.dbInstanceIdentifier = dbInstanceIdentifier;
+            return this;
+        }
+
+        /**
+         * Sets the value of {@link DataAwsDbSnapshotConfig#getDbSnapshotIdentifier}
+         * @param dbSnapshotIdentifier the value to be set.
+         * @return {@code this}
+         */
+        public Builder dbSnapshotIdentifier(java.lang.String dbSnapshotIdentifier) {
+            this.dbSnapshotIdentifier = dbSnapshotIdentifier;
+            return this;
+        }
+
+        /**
+         * Sets the value of {@link DataAwsDbSnapshotConfig#getIncludePublic}
+         * @param includePublic the value to be set.
+         * @return {@code this}
+         */
+        public Builder includePublic(java.lang.Boolean includePublic) {
+            this.includePublic = includePublic;
+            return this;
+        }
+
+        /**
+         * Sets the value of {@link DataAwsDbSnapshotConfig#getIncludeShared}
+         * @param includeShared the value to be set.
+         * @return {@code this}
+         */
+        public Builder includeShared(java.lang.Boolean includeShared) {
+            this.includeShared = includeShared;
+            return this;
+        }
+
+        /**
+         * Sets the value of {@link DataAwsDbSnapshotConfig#getMostRecent}
+         * @param mostRecent the value to be set.
+         * @return {@code this}
+         */
+        public Builder mostRecent(java.lang.Boolean mostRecent) {
+            this.mostRecent = mostRecent;
+            return this;
+        }
+
+        /**
+         * Sets the value of {@link DataAwsDbSnapshotConfig#getSnapshotType}
+         * @param snapshotType the value to be set.
+         * @return {@code this}
+         */
+        public Builder snapshotType(java.lang.String snapshotType) {
+            this.snapshotType = snapshotType;
+            return this;
+        }
+
+        /**
+         * Sets the value of {@link DataAwsDbSnapshotConfig#getCount}
+         * @param count the value to be set.
+         * @return {@code this}
+         */
+        @software.amazon.jsii.Stability(software.amazon.jsii.Stability.Level.Experimental)
+        public Builder count(java.lang.Number count) {
+            this.count = count;
+            return this;
+        }
+
+        /**
+         * Sets the value of {@link DataAwsDbSnapshotConfig#getDependsOn}
+         * @param dependsOn the value to be set.
+         * @return {@code this}
+         */
+        @software.amazon.jsii.Stability(software.amazon.jsii.Stability.Level.Experimental)
+        @SuppressWarnings("unchecked")
+        public Builder dependsOn(java.util.List<? extends com.hashicorp.cdktf.ITerraformDependable> dependsOn) {
+            this.dependsOn = (java.util.List<com.hashicorp.cdktf.ITerraformDependable>)dependsOn;
+            return this;
+        }
+
+        /**
+         * Sets the value of {@link DataAwsDbSnapshotConfig#getLifecycle}
+         * @param lifecycle the value to be set.
+         * @return {@code this}
+         */
+        @software.amazon.jsii.Stability(software.amazon.jsii.Stability.Level.Experimental)
+        public Builder lifecycle(com.hashicorp.cdktf.TerraformResourceLifecycle lifecycle) {
+            this.lifecycle = lifecycle;
+            return this;
+        }
+
+        /**
+         * Sets the value of {@link DataAwsDbSnapshotConfig#getProvider}
+         * @param provider the value to be set.
+         * @return {@code this}
+         */
+        @software.amazon.jsii.Stability(software.amazon.jsii.Stability.Level.Experimental)
+        public Builder provider(com.hashicorp.cdktf.TerraformProvider provider) {
+            this.provider = provider;
+            return this;
+        }
+
+        /**
+         * Builds the configured instance.
+         * @return a new instance of {@link DataAwsDbSnapshotConfig}
+         * @throws NullPointerException if any required attribute was not provided
+         */
+        @Override
+        public DataAwsDbSnapshotConfig build() {
+            return new Jsii$Proxy(dbInstanceIdentifier, dbSnapshotIdentifier, includePublic, includeShared, mostRecent, snapshotType, count, dependsOn, lifecycle, provider);
+        }
+    }
+
+    /**
+     * An implementation for {@link DataAwsDbSnapshotConfig}
+     */
+    @software.amazon.jsii.Internal
+    final class Jsii$Proxy extends software.amazon.jsii.JsiiObject implements DataAwsDbSnapshotConfig {
+        private final java.lang.String dbInstanceIdentifier;
+        private final java.lang.String dbSnapshotIdentifier;
+        private final java.lang.Boolean includePublic;
+        private final java.lang.Boolean includeShared;
+        private final java.lang.Boolean mostRecent;
+        private final java.lang.String snapshotType;
+        private final java.lang.Number count;
+        private final java.util.List<com.hashicorp.cdktf.ITerraformDependable> dependsOn;
+        private final com.hashicorp.cdktf.TerraformResourceLifecycle lifecycle;
+        private final com.hashicorp.cdktf.TerraformProvider provider;
+
+        /**
+         * Constructor that initializes the object based on values retrieved from the JsiiObject.
+         * @param objRef Reference to the JSII managed object.
+         */
+        protected Jsii$Proxy(final software.amazon.jsii.JsiiObjectRef objRef) {
+            super(objRef);
+            this.dbInstanceIdentifier = software.amazon.jsii.Kernel.get(this, "dbInstanceIdentifier", software.amazon.jsii.NativeType.forClass(java.lang.String.class));
+            this.dbSnapshotIdentifier = software.amazon.jsii.Kernel.get(this, "dbSnapshotIdentifier", software.amazon.jsii.NativeType.forClass(java.lang.String.class));
+            this.includePublic = software.amazon.jsii.Kernel.get(this, "includePublic", software.amazon.jsii.NativeType.forClass(java.lang.Boolean.class));
+            this.includeShared = software.amazon.jsii.Kernel.get(this, "includeShared", software.amazon.jsii.NativeType.forClass(java.lang.Boolean.class));
+            this.mostRecent = software.amazon.jsii.Kernel.get(this, "mostRecent", software.amazon.jsii.NativeType.forClass(java.lang.Boolean.class));
+            this.snapshotType = software.amazon.jsii.Kernel.get(this, "snapshotType", software.amazon.jsii.NativeType.forClass(java.lang.String.class));
+            this.count = software.amazon.jsii.Kernel.get(this, "count", software.amazon.jsii.NativeType.forClass(java.lang.Number.class));
+            this.dependsOn = software.amazon.jsii.Kernel.get(this, "dependsOn", software.amazon.jsii.NativeType.listOf(software.amazon.jsii.NativeType.forClass(com.hashicorp.cdktf.ITerraformDependable.class)));
+            this.lifecycle = software.amazon.jsii.Kernel.get(this, "lifecycle", software.amazon.jsii.NativeType.forClass(com.hashicorp.cdktf.TerraformResourceLifecycle.class));
+            this.provider = software.amazon.jsii.Kernel.get(this, "provider", software.amazon.jsii.NativeType.forClass(com.hashicorp.cdktf.TerraformProvider.class));
+        }
+
+        /**
+         * Constructor that initializes the object based on literal property values passed by the {@link Builder}.
+         */
+        @SuppressWarnings("unchecked")
+        protected Jsii$Proxy(final java.lang.String dbInstanceIdentifier, final java.lang.String dbSnapshotIdentifier, final java.lang.Boolean includePublic, final java.lang.Boolean includeShared, final java.lang.Boolean mostRecent, final java.lang.String snapshotType, final java.lang.Number count, final java.util.List<? extends com.hashicorp.cdktf.ITerraformDependable> dependsOn, final com.hashicorp.cdktf.TerraformResourceLifecycle lifecycle, final com.hashicorp.cdktf.TerraformProvider provider) {
+            super(software.amazon.jsii.JsiiObject.InitializationMode.JSII);
+            this.dbInstanceIdentifier = dbInstanceIdentifier;
+            this.dbSnapshotIdentifier = dbSnapshotIdentifier;
+            this.includePublic = includePublic;
+            this.includeShared = includeShared;
+            this.mostRecent = mostRecent;
+            this.snapshotType = snapshotType;
+            this.count = count;
+            this.dependsOn = (java.util.List<com.hashicorp.cdktf.ITerraformDependable>)dependsOn;
+            this.lifecycle = lifecycle;
+            this.provider = provider;
+        }
+
+        @Override
+        public final java.lang.String getDbInstanceIdentifier() {
+            return this.dbInstanceIdentifier;
+        }
+
+        @Override
+        public final java.lang.String getDbSnapshotIdentifier() {
+            return this.dbSnapshotIdentifier;
+        }
+
+        @Override
+        public final java.lang.Boolean getIncludePublic() {
+            return this.includePublic;
+        }
+
+        @Override
+        public final java.lang.Boolean getIncludeShared() {
+            return this.includeShared;
+        }
+
+        @Override
+        public final java.lang.Boolean getMostRecent() {
+            return this.mostRecent;
+        }
+
+        @Override
+        public final java.lang.String getSnapshotType() {
+            return this.snapshotType;
+        }
+
+        @Override
+        public final java.lang.Number getCount() {
+            return this.count;
+        }
+
+        @Override
+        public final java.util.List<com.hashicorp.cdktf.ITerraformDependable> getDependsOn() {
+            return this.dependsOn;
+        }
+
+        @Override
+        public final com.hashicorp.cdktf.TerraformResourceLifecycle getLifecycle() {
+            return this.lifecycle;
+        }
+
+        @Override
+        public final com.hashicorp.cdktf.TerraformProvider getProvider() {
+            return this.provider;
+        }
+
+        @Override
+        @software.amazon.jsii.Internal
+        public com.fasterxml.jackson.databind.JsonNode $jsii$toJson() {
+            final com.fasterxml.jackson.databind.ObjectMapper om = software.amazon.jsii.JsiiObjectMapper.INSTANCE;
+            final com.fasterxml.jackson.databind.node.ObjectNode data = com.fasterxml.jackson.databind.node.JsonNodeFactory.instance.objectNode();
+
+            if (this.getDbInstanceIdentifier() != null) {
+                data.set("dbInstanceIdentifier", om.valueToTree(this.getDbInstanceIdentifier()));
+            }
+            if (this.getDbSnapshotIdentifier() != null) {
+                data.set("dbSnapshotIdentifier", om.valueToTree(this.getDbSnapshotIdentifier()));
+            }
+            if (this.getIncludePublic() != null) {
+                data.set("includePublic", om.valueToTree(this.getIncludePublic()));
+            }
+            if (this.getIncludeShared() != null) {
+                data.set("includeShared", om.valueToTree(this.getIncludeShared()));
+            }
+            if (this.getMostRecent() != null) {
+                data.set("mostRecent", om.valueToTree(this.getMostRecent()));
+            }
+            if (this.getSnapshotType() != null) {
+                data.set("snapshotType", om.valueToTree(this.getSnapshotType()));
+            }
+            if (this.getCount() != null) {
+                data.set("count", om.valueToTree(this.getCount()));
+            }
+            if (this.getDependsOn() != null) {
+                data.set("dependsOn", om.valueToTree(this.getDependsOn()));
+            }
+            if (this.getLifecycle() != null) {
+                data.set("lifecycle", om.valueToTree(this.getLifecycle()));
+            }
+            if (this.getProvider() != null) {
+                data.set("provider", om.valueToTree(this.getProvider()));
+            }
+
+            final com.fasterxml.jackson.databind.node.ObjectNode struct = com.fasterxml.jackson.databind.node.JsonNodeFactory.instance.objectNode();
+            struct.set("fqn", om.valueToTree("aws.DataAwsDbSnapshotConfig"));
+            struct.set("data", data);
+
+            final com.fasterxml.jackson.databind.node.ObjectNode obj = com.fasterxml.jackson.databind.node.JsonNodeFactory.instance.objectNode();
+            obj.set("$jsii.struct", struct);
+
+            return obj;
+        }
+
+        @Override
+        public final boolean equals(final Object o) {
+            if (this == o) return true;
+            if (o == null || getClass() != o.getClass()) return false;
+
+            DataAwsDbSnapshotConfig.Jsii$Proxy that = (DataAwsDbSnapshotConfig.Jsii$Proxy) o;
+
+            if (this.dbInstanceIdentifier != null ? !this.dbInstanceIdentifier.equals(that.dbInstanceIdentifier) : that.dbInstanceIdentifier != null) return false;
+            if (this.dbSnapshotIdentifier != null ? !this.dbSnapshotIdentifier.equals(that.dbSnapshotIdentifier) : that.dbSnapshotIdentifier != null) return false;
+            if (this.includePublic != null ? !this.includePublic.equals(that.includePublic) : that.includePublic != null) return false;
+            if (this.includeShared != null ? !this.includeShared.equals(that.includeShared) : that.includeShared != null) return false;
+            if (this.mostRecent != null ? !this.mostRecent.equals(that.mostRecent) : that.mostRecent != null) return false;
+            if (this.snapshotType != null ? !this.snapshotType.equals(that.snapshotType) : that.snapshotType != null) return false;
+            if (this.count != null ? !this.count.equals(that.count) : that.count != null) return false;
+            if (this.dependsOn != null ? !this.dependsOn.equals(that.dependsOn) : that.dependsOn != null) return false;
+            if (this.lifecycle != null ? !this.lifecycle.equals(that.lifecycle) : that.lifecycle != null) return false;
+            return this.provider != null ? this.provider.equals(that.provider) : that.provider == null;
+        }
+
+        @Override
+        public final int hashCode() {
+            int result = this.dbInstanceIdentifier != null ? this.dbInstanceIdentifier.hashCode() : 0;
+            result = 31 * result + (this.dbSnapshotIdentifier != null ? this.dbSnapshotIdentifier.hashCode() : 0);
+            result = 31 * result + (this.includePublic != null ? this.includePublic.hashCode() : 0);
+            result = 31 * result + (this.includeShared != null ? this.includeShared.hashCode() : 0);
+            result = 31 * result + (this.mostRecent != null ? this.mostRecent.hashCode() : 0);
+            result = 31 * result + (this.snapshotType != null ? this.snapshotType.hashCode() : 0);
+            result = 31 * result + (this.count != null ? this.count.hashCode() : 0);
+            result = 31 * result + (this.dependsOn != null ? this.dependsOn.hashCode() : 0);
+            result = 31 * result + (this.lifecycle != null ? this.lifecycle.hashCode() : 0);
+            result = 31 * result + (this.provider != null ? this.provider.hashCode() : 0);
+            return result;
+        }
+    }
+}

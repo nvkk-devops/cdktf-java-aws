@@ -1,0 +1,9 @@
+{
+  "language": "java",
+  "app": "mvn -e -q compile exec:java",
+  "terraformProviders": ["aws@~> 2.0"],
+  "context": {
+    "excludeStackIdFromLogicalIds": "true",
+"allowSepCharsInLogicalIds": "true"
+  }
+}
